@@ -12,7 +12,7 @@ Open Folder
 ==========================================================
 */
 
-function openFolder(path){
+function openFolder(path, updateHistory = true){
 
 
     const folder =
@@ -47,11 +47,12 @@ function openFolder(path){
 
 
 
-    if(typeof updateURL === "function"){
+    if(
+        updateHistory &&
+        typeof updateURL === "function"
+    ){
 
-        updateURL(
-            path
-        );
+        updateURL(path);
 
     }
 
