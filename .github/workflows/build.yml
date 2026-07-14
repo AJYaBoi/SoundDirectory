@@ -1,0 +1,31 @@
+name: Build Directory
+
+on:
+  push:
+    branches:
+      - main
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Generate JSON
+        run: python generate_index.py
+
+      - name: Commit changes
+        run: |
+          git config user.name github-actions
+          git config user.email github-actions@github.com
+
+          git add index.json
+
+          git diff --cached --quiet || (
+            git commit -m "Update sound directory"
+            git push
+          )
