@@ -510,3 +510,69 @@ audio{
     border-radius:8px;
 
 }
+
+#searchResults{
+
+    position:absolute;
+
+    top:58px;
+
+    right:20px;
+
+    width:340px;
+
+    max-height:450px;
+
+    overflow:auto;
+
+    background:var(--panel);
+
+    border:1px solid var(--border);
+
+    border-radius:8px;
+
+    box-shadow:0 4px 15px rgba(0,0,0,.4);
+
+    z-index:100;
+
+}
+
+
+.searchResult{
+
+    padding:12px;
+
+    cursor:pointer;
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:4px;
+
+}
+
+
+.searchResult:hover{
+
+    background:var(--hover);
+
+}
+
+
+.searchResult small{
+
+    color:var(--subtext);
+
+    font-size:12px;
+
+}
+
+
+.searchEmpty{
+
+    padding:15px;
+
+    color:var(--subtext);
+
+}
