@@ -3,12 +3,15 @@
 
 <head>
 
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="UTF-8">
 
-    <title>Mewtindew's Sound Directory</title>
+<meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" href="style.css">
+<title>Mewtindew's Sound Directory</title>
+
+<link rel="stylesheet" href="style.css">
 
 </head>
 
@@ -16,35 +19,83 @@
 
 <header>
 
-    <h1>Mewtindew's Sound Directory</h1>
+    <div id="logo">
+
+        Mewtindew's Sound Directory
+
+    </div>
 
     <input
         id="search"
-        type="text"
-        placeholder="Search sounds..."
-    >
+        type="search"
+        placeholder="Search sounds or folders...">
 
 </header>
 
-<div id="container">
+<div id="app">
 
     <aside id="sidebar">
 
-        <div id="folderTree"></div>
+        <div id="tree">
+
+            Loading...
+
+        </div>
 
     </aside>
 
-    <main id="content">
+    <main id="viewer">
 
-        <h2>Welcome</h2>
+        <div id="breadcrumbs"></div>
 
-        <p>Select a folder from the left.</p>
+        <div id="bannerContainer"></div>
+
+        <section id="folderInfo">
+
+            <h1>
+
+                Welcome
+
+            </h1>
+
+            <p>
+
+                Select a folder on the left.
+
+            </p>
+
+        </section>
+
+        <section id="fileList">
+
+        </section>
 
     </main>
 
 </div>
 
-<script src="script.js"></script>
+<footer>
+
+    Generated automatically from GitHub.
+
+</footer>
+
+<script src="js/utils.js"></script>
+
+<script src="js/api.js"></script>
+
+<script src="js/tree.js"></script>
+
+<script src="js/content.js"></script>
+
+<script src="js/search.js"></script>
+
+<script src="js/audio.js"></script>
+
+<script src="js/router.js"></script>
+
+<script src="js/app.js"></script>
 
 </body>
+
 </html>
