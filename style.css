@@ -490,3 +490,17 @@ footer{
     vertical-align:middle;
     border-radius:3px;
 }
+
+#breadcrumbs span{
+
+    color:var(--accent);
+
+    cursor:pointer;
+
+}
+
+#breadcrumbs span:hover{
+
+    text-decoration:underline;
+
+}
