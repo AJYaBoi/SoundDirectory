@@ -66,8 +66,6 @@ async function initializeApplication(){
 
         buildTree();
 
-        openFolder(startFolder, false);
-
         let startFolder = "";
 
         if(location.hash.length > 1){
