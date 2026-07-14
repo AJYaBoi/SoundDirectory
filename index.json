@@ -1,11 +1,54 @@
 {
-    "BRANCH1TESTING": {
-        "info": "branch 1 testing\n",
-        "files": [
-            {
-                "name": "lowtiergod YICKADEE2.mp3",
-                "path": "sounds/BRANCH1TESTING/lowtiergod YICKADEE2.mp3"
+    "name": "sounds",
+    "path": "",
+    "type": "folder",
+    "info": "this is where your search starts",
+    "icon": null,
+    "banner": null,
+    "children": [
+        {
+            "name": "BRANCH1TESTING",
+            "path": "BRANCH1TESTING",
+            "type": "folder",
+            "info": "branch 1 testing",
+            "icon": null,
+            "banner": null,
+            "children": [
+                {
+                    "type": "audio",
+                    "name": "lowtiergod YICKADEE2.mp3",
+                    "path": "BRANCH1TESTING/lowtiergod YICKADEE2.mp3",
+                    "extension": "mp3"
+                },
+                {
+                    "name": "subfoldertest",
+                    "path": "BRANCH1TESTING/subfoldertest",
+                    "type": "folder",
+                    "info": "test test test, thats all we do",
+                    "icon": null,
+                    "banner": null,
+                    "children": [
+                        {
+                            "type": "audio",
+                            "name": "bone-break-crack-snap-sound-effect-(original)-made-with-Voicemod.mp3",
+                            "path": "BRANCH1TESTING/subfoldertest/bone-break-crack-snap-sound-effect-(original)-made-with-Voicemod.mp3",
+                            "extension": "mp3"
+                        }
+                    ],
+                    "stats": {
+                        "folders": 0,
+                        "files": 1
+                    }
+                }
+            ],
+            "stats": {
+                "folders": 1,
+                "files": 2
             }
-        ]
+        }
+    ],
+    "stats": {
+        "folders": 2,
+        "files": 2
     }
 }
