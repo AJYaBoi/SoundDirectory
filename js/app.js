@@ -82,7 +82,7 @@ async function initializeApplication(){
 
         }
 
-        openFolder(startFolder);
+        openFolder(startFolder, false);
 
     }
 
