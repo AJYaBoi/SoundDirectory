@@ -481,3 +481,12 @@ footer{
     }
 
 }
+
+.children{
+    display:block;
+}
+
+.treeItem img{
+    vertical-align:middle;
+    border-radius:3px;
+}
