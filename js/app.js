@@ -60,11 +60,13 @@ async function initializeApplication(){
 
         initializeRouter();
 
-        initializeSearch();
-
         initializeAudio();
 
+        initializeSearch();
+
         buildTree();
+
+        openFolder(startFolder, false);
 
         let startFolder = "";
 
