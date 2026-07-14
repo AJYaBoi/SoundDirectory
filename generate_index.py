@@ -1,56 +1,331 @@
-import os
 import json
+import os
+from pathlib import Path
+from datetime import datetime
 
-SOUND_ROOT = "sounds"
+# ==========================================================
+# Configuration
+# ==========================================================
 
-AUDIO_EXTENSIONS = (
+SOUND_ROOT = Path("sounds")
+OUTPUT_FILE = Path("index.json")
+
+AUDIO_EXTENSIONS = {
     ".mp3",
     ".wav",
     ".ogg",
     ".flac",
     ".aac",
     ".m4a"
-)
+}
 
-IMAGE_EXTENSIONS = (
+IMAGE_EXTENSIONS = {
     ".png",
     ".jpg",
     ".jpeg",
     ".webp"
-)
+}
+
+DIRECTORY_INFO = "direc.info"
+DIRECTORY_JSON = ".directory.json"
+
+FOLDER_ICON_NAMES = [
+    "folder.png",
+    "folder.jpg",
+    "folder.jpeg",
+    "folder.webp"
+]
+
+BANNER_NAMES = [
+    "banner.png",
+    "banner.jpg",
+    "banner.jpeg",
+    "banner.webp"
+]
+
+# ==========================================================
+# Site Metadata
+# ==========================================================
+
+site_meta = {
+    "generator": "Mewtindew Sound Directory",
+    "version": "1.0.0",
+    "generated": datetime.utcnow().isoformat() + "Z",
+    "totalFolders": 0,
+    "totalAudio": 0
+}
+
+lookup = {}
+search = []
+
+# ==========================================================
+# Helpers
+# ==========================================================
+
+def unix_path(path):
+    return str(path).replace("\\", "/")
 
 
-def build_folder(folder_path, relative_path=""):
+def relative(path):
+    return unix_path(path.relative_to(SOUND_ROOT))
 
-    node = {
-        "name": os.path.basename(folder_path),
-        "path": relative_path.replace("\\", "/"),
-        "type": "folder",
-        "info": "",
-        "icon": None,
-        "banner": None,
-        "children": [],
-        "stats": {
-            "folders": 0,
-            "files": 0
-        }
+
+def human_size(size):
+
+    units = [
+        "B",
+        "KB",
+        "MB",
+        "GB",
+        "TB"
+    ]
+
+    value = float(size)
+
+    for unit in units:
+
+        if value < 1024:
+
+            return f"{value:.1f} {unit}"
+
+        value /= 1024
+
+    return f"{value:.1f} PB"
+
+
+def pretty_name(filename):
+
+    stem = Path(filename).stem
+
+    stem = stem.replace("_", " ")
+    stem = stem.replace("-", " ")
+
+    words = []
+
+    for word in stem.split():
+
+        words.append(word.capitalize())
+
+    return " ".join(words)
+
+
+# ==========================================================
+# Optional .directory.json
+# ==========================================================
+
+def load_directory_json(folder):
+
+    file = folder / DIRECTORY_JSON
+
+    if not file.exists():
+
+        return {}
+
+    try:
+
+        with open(file, "r", encoding="utf8") as f:
+
+            return json.load(f)
+
+    except Exception as e:
+
+        print(f"Could not read {file}: {e}")
+
+        return {}
+
+
+# ==========================================================
+# direc.info
+# ==========================================================
+
+def load_directory_info(folder):
+
+    info = folder / DIRECTORY_INFO
+
+    if not info.exists():
+
+        return ""
+
+    return info.read_text(
+        encoding="utf8",
+        errors="ignore"
+    ).strip()
+
+
+# ==========================================================
+# Detect Images
+# ==========================================================
+
+def detect_image(folder, names):
+
+    for name in names:
+
+        file = folder / name
+
+        if file.exists():
+
+            return relative(file)
+
+    return None
+
+
+# ==========================================================
+# Audio Node
+# ==========================================================
+
+def build_audio_node(file, folder_path):
+
+    size = file.stat().st_size
+
+    return {
+
+        "type": "audio",
+
+        "name": file.name,
+
+        "displayName": pretty_name(file.name),
+
+        "extension": file.suffix.lower()[1:],
+
+        "path": relative(file),
+
+        "folder": folder_path,
+
+        "size": size,
+
+        "sizeText": human_size(size)
+
     }
 
-    info_file = os.path.join(folder_path, "direc.info")
 
-    if os.path.exists(info_file):
-        with open(info_file, "r", encoding="utf8") as f:
-            node["info"] = f.read().strip()
+# ==========================================================
+# Folder Node
+# ==========================================================
 
-    for item in sorted(os.listdir(folder_path)):
+def empty_folder(folder, relative_path):
 
-        full = os.path.join(folder_path, item)
+    return {
 
-        rel = os.path.join(relative_path, item).replace("\\", "/")
+        "type": "folder",
 
-        if os.path.isdir(full):
+        "name": folder.name,
 
-            child = build_folder(full, rel)
+        "title": folder.name,
+
+        "path": relative_path,
+
+        "parent": "",
+
+        "depth": 0,
+
+        "breadcrumbs": [],
+
+        "info": "",
+
+        "icon": None,
+
+        "banner": None,
+
+        "settings": {},
+
+        "children": [],
+
+        "stats": {
+
+            "folders": 0,
+
+            "files": 0
+
+        }
+
+    }
+
+
+# ==========================================================
+# Search Helper
+# ==========================================================
+
+def add_search(entry):
+
+    search.append(entry)
+
+
+# ==========================================================
+# Lookup Helper
+# ==========================================================
+
+def add_lookup(path, node):
+
+    lookup[path] = node
+
+
+def build_folder(folder, parent_path="", breadcrumbs=None):
+
+    if breadcrumbs is None:
+        breadcrumbs = []
+
+    rel_path = relative(folder) if folder != SOUND_ROOT else ""
+
+    node = empty_folder(folder, rel_path)
+
+    node["parent"] = parent_path
+    node["depth"] = len(breadcrumbs)
+    node["breadcrumbs"] = breadcrumbs.copy()
+
+    # Load optional metadata
+    settings = load_directory_json(folder)
+
+    node["settings"] = settings
+
+    if "title" in settings:
+        node["title"] = settings["title"]
+
+    node["info"] = load_directory_info(folder)
+
+    icon = detect_image(folder, FOLDER_ICON_NAMES)
+    banner = detect_image(folder, BANNER_NAMES)
+
+    if icon:
+        node["icon"] = icon
+
+    if banner:
+        node["banner"] = banner
+
+    site_meta["totalFolders"] += 1
+
+    #
+    # Walk contents
+    #
+
+    for item in sorted(folder.iterdir(), key=lambda p: (p.is_file(), p.name.lower())):
+
+        if item.name.startswith(".") and item.name != ".directory.json":
+            continue
+
+        if item.name == DIRECTORY_INFO:
+            continue
+
+        if item.name in FOLDER_ICON_NAMES:
+            continue
+
+        if item.name in BANNER_NAMES:
+            continue
+
+        #
+        # Folder
+        #
+
+        if item.is_dir():
+
+            child = build_folder(
+
+                item,
+
+                rel_path,
+
+                breadcrumbs + [item.name]
+
+            )
 
             node["children"].append(child)
 
@@ -60,38 +335,129 @@ def build_folder(folder_path, relative_path=""):
 
             continue
 
-        lower = item.lower()
+        #
+        # Audio
+        #
 
-        if lower == "folder.png":
-            node["icon"] = rel
-            continue
+        if item.suffix.lower() in AUDIO_EXTENSIONS:
 
-        if lower == "banner.png":
-            node["banner"] = rel
-            continue
+            audio = build_audio_node(item, rel_path)
 
-        if lower.endswith(AUDIO_EXTENSIONS):
+            node["children"].append(audio)
 
-            node["children"].append({
+            node["stats"]["files"] += 1
+
+            site_meta["totalAudio"] += 1
+
+            add_search({
 
                 "type": "audio",
 
-                "name": item,
+                "name": audio["displayName"],
 
-                "path": rel,
+                "filename": audio["name"],
 
-                "extension": os.path.splitext(item)[1][1:].lower()
+                "folder": rel_path,
+
+                "path": audio["path"],
+
+                "keywords": (
+
+                    audio["displayName"]
+
+                    + " "
+
+                    + rel_path.replace("/", " ")
+
+                ).lower()
 
             })
 
-            node["stats"]["files"] += 1
+    #
+    # Folder search entry
+    #
+
+    add_search({
+
+        "type": "folder",
+
+        "name": node["title"],
+
+        "path": rel_path,
+
+        "keywords": (
+
+            node["title"]
+
+            + " "
+
+            + node["info"]
+
+        ).lower()
+
+    })
+
+    #
+    # Lookup table
+    #
+
+    add_lookup(rel_path, node)
 
     return node
 
 
+# ==========================================================
+# Build Tree
+# ==========================================================
+
 tree = build_folder(SOUND_ROOT)
 
-with open("index.json", "w", encoding="utf8") as f:
-    json.dump(tree, f, indent=4)
+# ==========================================================
+# Final JSON
+# ==========================================================
 
-print("Generated index.json")
+output = {
+
+    "meta": site_meta,
+
+    "lookup": lookup,
+
+    "search": search,
+
+    "tree": tree
+
+}
+
+with open(
+
+    OUTPUT_FILE,
+
+    "w",
+
+    encoding="utf8"
+
+) as f:
+
+    json.dump(
+
+        output,
+
+        f,
+
+        indent=4,
+
+        ensure_ascii=False
+
+    )
+
+print()
+
+print("===================================")
+print(" Mewtindew Sound Directory Builder ")
+print("===================================")
+
+print(f"Folders : {site_meta['totalFolders']}")
+print(f"Audio   : {site_meta['totalAudio']}")
+print(f"Output  : {OUTPUT_FILE}")
+
+print()
