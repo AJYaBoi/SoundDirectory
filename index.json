@@ -1,6 +1,11 @@
 {
     "BRANCH1TESTING": {
         "info": "branch 1 testing\n",
-        "files": []
+        "files": [
+            {
+                "name": "lowtiergod YICKADEE2.mp3",
+                "path": "sounds/BRANCH1TESTING/lowtiergod YICKADEE2.mp3"
+            }
+        ]
     }
 }
