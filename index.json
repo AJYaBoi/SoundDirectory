@@ -2,7 +2,7 @@
     "meta": {
         "generator": "Mewtindew Sound Directory",
         "version": "1.0.0",
-        "generated": "2026-07-14T18:23:55.869009Z",
+        "generated": "2026-07-14T18:39:35.048916Z",
         "totalFolders": 3,
         "totalAudio": 2
     },
@@ -11,28 +11,28 @@
             "type": "audio",
             "name": "Bone Break Crack Snap Sound Effect (original) Made With Voicemod",
             "filename": "bone-break-crack-snap-sound-effect-(original)-made-with-Voicemod.mp3",
-            "folder": "BRANCH1TESTING/subfoldertest",
-            "path": "BRANCH1TESTING/subfoldertest/bone-break-crack-snap-sound-effect-(original)-made-with-Voicemod.mp3",
-            "keywords": "bone break crack snap sound effect (original) made with voicemod branch1testing subfoldertest"
+            "folder": "sounds/BRANCH1TESTING/subfoldertest",
+            "path": "sounds/BRANCH1TESTING/subfoldertest/bone-break-crack-snap-sound-effect-(original)-made-with-Voicemod.mp3",
+            "keywords": "bone break crack snap sound effect (original) made with voicemod sounds branch1testing subfoldertest"
         },
         {
             "type": "folder",
             "name": "subfoldertest",
-            "path": "BRANCH1TESTING/subfoldertest",
+            "path": "sounds/BRANCH1TESTING/subfoldertest",
             "keywords": "subfoldertest test test test, thats all we do"
         },
         {
             "type": "audio",
             "name": "Lowtiergod Yickadee2",
             "filename": "lowtiergod YICKADEE2.mp3",
-            "folder": "BRANCH1TESTING",
-            "path": "BRANCH1TESTING/lowtiergod YICKADEE2.mp3",
-            "keywords": "lowtiergod yickadee2 branch1testing"
+            "folder": "sounds/BRANCH1TESTING",
+            "path": "sounds/BRANCH1TESTING/lowtiergod YICKADEE2.mp3",
+            "keywords": "lowtiergod yickadee2 sounds branch1testing"
         },
         {
             "type": "folder",
             "name": "BRANCH1TESTING",
-            "path": "BRANCH1TESTING",
+            "path": "sounds/BRANCH1TESTING",
             "keywords": "branch1testing branch 1 testing"
         },
         {
@@ -59,7 +59,7 @@
                 "type": "folder",
                 "name": "BRANCH1TESTING",
                 "title": "BRANCH1TESTING",
-                "path": "BRANCH1TESTING",
+                "path": "sounds/BRANCH1TESTING",
                 "parent": "",
                 "depth": 1,
                 "breadcrumbs": [
@@ -74,8 +74,8 @@
                         "type": "folder",
                         "name": "subfoldertest",
                         "title": "subfoldertest",
-                        "path": "BRANCH1TESTING/subfoldertest",
-                        "parent": "BRANCH1TESTING",
+                        "path": "sounds/BRANCH1TESTING/subfoldertest",
+                        "parent": "sounds/BRANCH1TESTING",
                         "depth": 2,
                         "breadcrumbs": [
                             "BRANCH1TESTING",
@@ -91,8 +91,8 @@
                                 "name": "bone-break-crack-snap-sound-effect-(original)-made-with-Voicemod.mp3",
                                 "displayName": "Bone Break Crack Snap Sound Effect (original) Made With Voicemod",
                                 "extension": "mp3",
-                                "path": "BRANCH1TESTING/subfoldertest/bone-break-crack-snap-sound-effect-(original)-made-with-Voicemod.mp3",
-                                "folder": "BRANCH1TESTING/subfoldertest",
+                                "path": "sounds/BRANCH1TESTING/subfoldertest/bone-break-crack-snap-sound-effect-(original)-made-with-Voicemod.mp3",
+                                "folder": "sounds/BRANCH1TESTING/subfoldertest",
                                 "size": 6573,
                                 "sizeText": "6.4 KB"
                             }
@@ -107,8 +107,8 @@
                         "name": "lowtiergod YICKADEE2.mp3",
                         "displayName": "Lowtiergod Yickadee2",
                         "extension": "mp3",
-                        "path": "BRANCH1TESTING/lowtiergod YICKADEE2.mp3",
-                        "folder": "BRANCH1TESTING",
+                        "path": "sounds/BRANCH1TESTING/lowtiergod YICKADEE2.mp3",
+                        "folder": "sounds/BRANCH1TESTING",
                         "size": 49721,
                         "sizeText": "48.6 KB"
                     }
