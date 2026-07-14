@@ -55,7 +55,6 @@ site_meta = {
     "totalAudio": 0
 }
 
-lookup = {}
 search = []
 
 # ==========================================================
@@ -254,10 +253,6 @@ def add_search(entry):
 # Lookup Helper
 # ==========================================================
 
-def add_lookup(path, node):
-
-    lookup[path] = node
-
 
 def build_folder(folder, parent_path="", breadcrumbs=None):
 
@@ -401,7 +396,6 @@ def build_folder(folder, parent_path="", breadcrumbs=None):
     # Lookup table
     #
 
-    add_lookup(rel_path, node)
 
     return node
 
@@ -419,8 +413,6 @@ tree = build_folder(SOUND_ROOT)
 output = {
 
     "meta": site_meta,
-
-    "lookup": lookup,
 
     "search": search,
 
