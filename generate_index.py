@@ -66,7 +66,10 @@ def unix_path(path):
 
 
 def relative(path):
-    return unix_path(path.relative_to(SOUND_ROOT))
+
+    return "sounds/" + unix_path(
+        path.relative_to(SOUND_ROOT)
+    )
 
 
 def human_size(size):
