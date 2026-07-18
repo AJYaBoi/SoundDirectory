@@ -2,7 +2,7 @@
     "meta": {
         "generator": "Mewtindew Sound Directory",
         "version": "1.0.0",
-        "generated": "2026-07-18T22:26:11.214329Z",
+        "generated": "2026-07-18T22:26:51.020022Z",
         "totalFolders": 24,
         "totalAudio": 73
     },
@@ -727,7 +727,7 @@
             "type": "folder",
             "name": "Vehicle",
             "path": "sounds/Vehicle",
-            "keywords": "vehicle "
+            "keywords": "vehicle sounds that vehicles make"
         },
         {
             "type": "folder",
@@ -982,7 +982,7 @@
                 "breadcrumbs": [
                     "Vehicle"
                 ],
-                "info": "",
+                "info": "Sounds that vehicles make",
                 "icon": null,
                 "banner": null,
                 "settings": {},
