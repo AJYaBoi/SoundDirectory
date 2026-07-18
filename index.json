@@ -2,8 +2,8 @@
     "meta": {
         "generator": "Mewtindew Sound Directory",
         "version": "1.0.0",
-        "generated": "2026-07-18T01:50:00.984408Z",
-        "totalFolders": 7,
+        "generated": "2026-07-18T01:51:04.982823Z",
+        "totalFolders": 8,
         "totalAudio": 8
     },
     "search": [
@@ -34,6 +34,12 @@
             "name": "BRANCH1TESTING",
             "path": "sounds/BRANCH1TESTING",
             "keywords": "branch1testing branch 1 testing"
+        },
+        {
+            "type": "folder",
+            "name": "Frequencies",
+            "path": "sounds/Motorola/RadioInteractionSounds/ButtonSoundRoot/Frequencies",
+            "keywords": "frequencies tones for up one folder"
         },
         {
             "type": "folder",
@@ -237,9 +243,33 @@
                                 "icon": null,
                                 "banner": null,
                                 "settings": {},
-                                "children": [],
+                                "children": [
+                                    {
+                                        "type": "folder",
+                                        "name": "Frequencies",
+                                        "title": "Frequencies",
+                                        "path": "sounds/Motorola/RadioInteractionSounds/ButtonSoundRoot/Frequencies",
+                                        "parent": "sounds/Motorola/RadioInteractionSounds/ButtonSoundRoot",
+                                        "depth": 4,
+                                        "breadcrumbs": [
+                                            "Motorola",
+                                            "RadioInteractionSounds",
+                                            "ButtonSoundRoot",
+                                            "Frequencies"
+                                        ],
+                                        "info": "Tones for up one folder",
+                                        "icon": null,
+                                        "banner": null,
+                                        "settings": {},
+                                        "children": [],
+                                        "stats": {
+                                            "folders": 0,
+                                            "files": 0
+                                        }
+                                    }
+                                ],
                                 "stats": {
-                                    "folders": 0,
+                                    "folders": 1,
                                     "files": 0
                                 }
                             },
@@ -328,19 +358,19 @@
                             }
                         ],
                         "stats": {
-                            "folders": 2,
+                            "folders": 3,
                             "files": 6
                         }
                     }
                 ],
                 "stats": {
-                    "folders": 3,
+                    "folders": 4,
                     "files": 6
                 }
             }
         ],
         "stats": {
-            "folders": 6,
+            "folders": 7,
             "files": 8
         }
     }
