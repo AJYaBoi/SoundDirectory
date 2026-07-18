@@ -2,8 +2,8 @@
     "meta": {
         "generator": "Mewtindew Sound Directory",
         "version": "1.0.0",
-        "generated": "2026-07-14T18:39:35.048916Z",
-        "totalFolders": 3,
+        "generated": "2026-07-18T01:42:02.069546Z",
+        "totalFolders": 6,
         "totalAudio": 2
     },
     "search": [
@@ -34,6 +34,24 @@
             "name": "BRANCH1TESTING",
             "path": "sounds/BRANCH1TESTING",
             "keywords": "branch1testing branch 1 testing"
+        },
+        {
+            "type": "folder",
+            "name": "DTR600and700",
+            "path": "sounds/Motorola/RadioInteractionSounds/DTR600and700",
+            "keywords": "dtr600and700 these are the sounds that motorola dtr600 and dtr700 radios use for ui nav and ptt.\n\nsounds were recorded from the headphone port on the radio and may have an audible click, a few files have been adjusted but may still have a click."
+        },
+        {
+            "type": "folder",
+            "name": "RadioInteractionSounds",
+            "path": "sounds/Motorola/RadioInteractionSounds",
+            "keywords": "radiointeractionsounds "
+        },
+        {
+            "type": "folder",
+            "name": "Motorola",
+            "path": "sounds/Motorola",
+            "keywords": "motorola "
         },
         {
             "type": "folder",
@@ -117,10 +135,75 @@
                     "folders": 1,
                     "files": 2
                 }
+            },
+            {
+                "type": "folder",
+                "name": "Motorola",
+                "title": "Motorola",
+                "path": "sounds/Motorola",
+                "parent": "",
+                "depth": 1,
+                "breadcrumbs": [
+                    "Motorola"
+                ],
+                "info": "",
+                "icon": null,
+                "banner": null,
+                "settings": {},
+                "children": [
+                    {
+                        "type": "folder",
+                        "name": "RadioInteractionSounds",
+                        "title": "RadioInteractionSounds",
+                        "path": "sounds/Motorola/RadioInteractionSounds",
+                        "parent": "sounds/Motorola",
+                        "depth": 2,
+                        "breadcrumbs": [
+                            "Motorola",
+                            "RadioInteractionSounds"
+                        ],
+                        "info": "",
+                        "icon": null,
+                        "banner": null,
+                        "settings": {},
+                        "children": [
+                            {
+                                "type": "folder",
+                                "name": "DTR600and700",
+                                "title": "DTR600and700",
+                                "path": "sounds/Motorola/RadioInteractionSounds/DTR600and700",
+                                "parent": "sounds/Motorola/RadioInteractionSounds",
+                                "depth": 3,
+                                "breadcrumbs": [
+                                    "Motorola",
+                                    "RadioInteractionSounds",
+                                    "DTR600and700"
+                                ],
+                                "info": "These are the sounds that motorola DTR600 and DTR700 radios use for UI nav and PTT.\n\nSounds were recorded from the headphone port on the radio and may have an audible click, a few files have been adjusted but may still have a click.",
+                                "icon": null,
+                                "banner": null,
+                                "settings": {},
+                                "children": [],
+                                "stats": {
+                                    "folders": 0,
+                                    "files": 0
+                                }
+                            }
+                        ],
+                        "stats": {
+                            "folders": 1,
+                            "files": 0
+                        }
+                    }
+                ],
+                "stats": {
+                    "folders": 2,
+                    "files": 0
+                }
             }
         ],
         "stats": {
-            "folders": 2,
+            "folders": 5,
             "files": 2
         }
     }
