@@ -2,39 +2,11 @@
     "meta": {
         "generator": "Mewtindew Sound Directory",
         "version": "1.0.0",
-        "generated": "2026-07-18T01:51:56.217847Z",
-        "totalFolders": 8,
-        "totalAudio": 13
+        "generated": "2026-07-18T01:52:44.555247Z",
+        "totalFolders": 6,
+        "totalAudio": 11
     },
     "search": [
-        {
-            "type": "audio",
-            "name": "Bone Break Crack Snap Sound Effect (original) Made With Voicemod",
-            "filename": "bone-break-crack-snap-sound-effect-(original)-made-with-Voicemod.mp3",
-            "folder": "sounds/BRANCH1TESTING/subfoldertest",
-            "path": "sounds/BRANCH1TESTING/subfoldertest/bone-break-crack-snap-sound-effect-(original)-made-with-Voicemod.mp3",
-            "keywords": "bone break crack snap sound effect (original) made with voicemod sounds branch1testing subfoldertest"
-        },
-        {
-            "type": "folder",
-            "name": "subfoldertest",
-            "path": "sounds/BRANCH1TESTING/subfoldertest",
-            "keywords": "subfoldertest test test test, thats all we do"
-        },
-        {
-            "type": "audio",
-            "name": "Lowtiergod Yickadee2",
-            "filename": "lowtiergod YICKADEE2.mp3",
-            "folder": "sounds/BRANCH1TESTING",
-            "path": "sounds/BRANCH1TESTING/lowtiergod YICKADEE2.mp3",
-            "keywords": "lowtiergod yickadee2 sounds branch1testing"
-        },
-        {
-            "type": "folder",
-            "name": "BRANCH1TESTING",
-            "path": "sounds/BRANCH1TESTING",
-            "keywords": "branch1testing branch 1 testing"
-        },
         {
             "type": "audio",
             "name": "300",
@@ -173,69 +145,6 @@
         "banner": null,
         "settings": {},
         "children": [
-            {
-                "type": "folder",
-                "name": "BRANCH1TESTING",
-                "title": "BRANCH1TESTING",
-                "path": "sounds/BRANCH1TESTING",
-                "parent": "",
-                "depth": 1,
-                "breadcrumbs": [
-                    "BRANCH1TESTING"
-                ],
-                "info": "branch 1 testing",
-                "icon": null,
-                "banner": null,
-                "settings": {},
-                "children": [
-                    {
-                        "type": "folder",
-                        "name": "subfoldertest",
-                        "title": "subfoldertest",
-                        "path": "sounds/BRANCH1TESTING/subfoldertest",
-                        "parent": "sounds/BRANCH1TESTING",
-                        "depth": 2,
-                        "breadcrumbs": [
-                            "BRANCH1TESTING",
-                            "subfoldertest"
-                        ],
-                        "info": "test test test, thats all we do",
-                        "icon": null,
-                        "banner": null,
-                        "settings": {},
-                        "children": [
-                            {
-                                "type": "audio",
-                                "name": "bone-break-crack-snap-sound-effect-(original)-made-with-Voicemod.mp3",
-                                "displayName": "Bone Break Crack Snap Sound Effect (original) Made With Voicemod",
-                                "extension": "mp3",
-                                "path": "sounds/BRANCH1TESTING/subfoldertest/bone-break-crack-snap-sound-effect-(original)-made-with-Voicemod.mp3",
-                                "folder": "sounds/BRANCH1TESTING/subfoldertest",
-                                "size": 6573,
-                                "sizeText": "6.4 KB"
-                            }
-                        ],
-                        "stats": {
-                            "folders": 0,
-                            "files": 1
-                        }
-                    },
-                    {
-                        "type": "audio",
-                        "name": "lowtiergod YICKADEE2.mp3",
-                        "displayName": "Lowtiergod Yickadee2",
-                        "extension": "mp3",
-                        "path": "sounds/BRANCH1TESTING/lowtiergod YICKADEE2.mp3",
-                        "folder": "sounds/BRANCH1TESTING",
-                        "size": 49721,
-                        "sizeText": "48.6 KB"
-                    }
-                ],
-                "stats": {
-                    "folders": 1,
-                    "files": 2
-                }
-            },
             {
                 "type": "folder",
                 "name": "Motorola",
@@ -461,8 +370,8 @@
             }
         ],
         "stats": {
-            "folders": 7,
-            "files": 13
+            "folders": 5,
+            "files": 11
         }
     }
 }
