@@ -2,9 +2,9 @@
     "meta": {
         "generator": "Mewtindew Sound Directory",
         "version": "1.0.0",
-        "generated": "2026-07-18T01:51:20.396096Z",
+        "generated": "2026-07-18T01:51:56.217847Z",
         "totalFolders": 8,
-        "totalAudio": 11
+        "totalAudio": 13
     },
     "search": [
         {
@@ -64,6 +64,22 @@
             "name": "Frequencies",
             "path": "sounds/Motorola/RadioInteractionSounds/ButtonSoundRoot/Frequencies",
             "keywords": "frequencies tones for up one folder"
+        },
+        {
+            "type": "audio",
+            "name": "Mototrbo Button Bad",
+            "filename": "Mototrbo button bad.mp3",
+            "folder": "sounds/Motorola/RadioInteractionSounds/ButtonSoundRoot",
+            "path": "sounds/Motorola/RadioInteractionSounds/ButtonSoundRoot/Mototrbo button bad.mp3",
+            "keywords": "mototrbo button bad sounds motorola radiointeractionsounds buttonsoundroot"
+        },
+        {
+            "type": "audio",
+            "name": "Mototrbo Button Good",
+            "filename": "Mototrbo button good.mp3",
+            "folder": "sounds/Motorola/RadioInteractionSounds/ButtonSoundRoot",
+            "path": "sounds/Motorola/RadioInteractionSounds/ButtonSoundRoot/Mototrbo button good.mp3",
+            "keywords": "mototrbo button good sounds motorola radiointeractionsounds buttonsoundroot"
         },
         {
             "type": "folder",
@@ -321,11 +337,31 @@
                                             "folders": 0,
                                             "files": 3
                                         }
+                                    },
+                                    {
+                                        "type": "audio",
+                                        "name": "Mototrbo button bad.mp3",
+                                        "displayName": "Mototrbo Button Bad",
+                                        "extension": "mp3",
+                                        "path": "sounds/Motorola/RadioInteractionSounds/ButtonSoundRoot/Mototrbo button bad.mp3",
+                                        "folder": "sounds/Motorola/RadioInteractionSounds/ButtonSoundRoot",
+                                        "size": 134760,
+                                        "sizeText": "131.6 KB"
+                                    },
+                                    {
+                                        "type": "audio",
+                                        "name": "Mototrbo button good.mp3",
+                                        "displayName": "Mototrbo Button Good",
+                                        "extension": "mp3",
+                                        "path": "sounds/Motorola/RadioInteractionSounds/ButtonSoundRoot/Mototrbo button good.mp3",
+                                        "folder": "sounds/Motorola/RadioInteractionSounds/ButtonSoundRoot",
+                                        "size": 69661,
+                                        "sizeText": "68.0 KB"
                                     }
                                 ],
                                 "stats": {
                                     "folders": 1,
-                                    "files": 3
+                                    "files": 5
                                 }
                             },
                             {
@@ -414,19 +450,19 @@
                         ],
                         "stats": {
                             "folders": 3,
-                            "files": 9
+                            "files": 11
                         }
                     }
                 ],
                 "stats": {
                     "folders": 4,
-                    "files": 9
+                    "files": 11
                 }
             }
         ],
         "stats": {
             "folders": 7,
-            "files": 11
+            "files": 13
         }
     }
 }
