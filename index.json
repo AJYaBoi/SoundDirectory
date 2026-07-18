@@ -2,8 +2,8 @@
     "meta": {
         "generator": "Mewtindew Sound Directory",
         "version": "1.0.0",
-        "generated": "2026-07-18T01:42:28.797559Z",
-        "totalFolders": 6,
+        "generated": "2026-07-18T01:50:00.984408Z",
+        "totalFolders": 7,
         "totalAudio": 8
     },
     "search": [
@@ -34,6 +34,12 @@
             "name": "BRANCH1TESTING",
             "path": "sounds/BRANCH1TESTING",
             "keywords": "branch1testing branch 1 testing"
+        },
+        {
+            "type": "folder",
+            "name": "ButtonSoundRoot",
+            "path": "sounds/Motorola/RadioInteractionSounds/ButtonSoundRoot",
+            "keywords": "buttonsoundroot these are the tones that most motorola interaction sounds make\n\nfor button bad on mototrbo models, just layer 300 and 600 \n\ntone 900: is used for most good button presses on all radios\ntone 300: is used for most bad button presses, most notably on apx models\ntone 600: is used in conjunction with 300 to make the bad button sound for mototrbo models"
         },
         {
             "type": "audio",
@@ -217,6 +223,28 @@
                         "children": [
                             {
                                 "type": "folder",
+                                "name": "ButtonSoundRoot",
+                                "title": "ButtonSoundRoot",
+                                "path": "sounds/Motorola/RadioInteractionSounds/ButtonSoundRoot",
+                                "parent": "sounds/Motorola/RadioInteractionSounds",
+                                "depth": 3,
+                                "breadcrumbs": [
+                                    "Motorola",
+                                    "RadioInteractionSounds",
+                                    "ButtonSoundRoot"
+                                ],
+                                "info": "These are the tones that most motorola interaction sounds make\n\nFor button bad on MOTOTRBO models, just layer 300 and 600 \n\nTONE 900: is used for most good button presses on all radios\nTONE 300: is used for most bad button presses, most notably on APX models\nTONE 600: is used in conjunction with 300 to make the bad button sound for MOTOTRBO models",
+                                "icon": null,
+                                "banner": null,
+                                "settings": {},
+                                "children": [],
+                                "stats": {
+                                    "folders": 0,
+                                    "files": 0
+                                }
+                            },
+                            {
+                                "type": "folder",
                                 "name": "DTR600and700",
                                 "title": "DTR600and700",
                                 "path": "sounds/Motorola/RadioInteractionSounds/DTR600and700",
@@ -300,19 +328,19 @@
                             }
                         ],
                         "stats": {
-                            "folders": 1,
+                            "folders": 2,
                             "files": 6
                         }
                     }
                 ],
                 "stats": {
-                    "folders": 2,
+                    "folders": 3,
                     "files": 6
                 }
             }
         ],
         "stats": {
-            "folders": 5,
+            "folders": 6,
             "files": 8
         }
     }
