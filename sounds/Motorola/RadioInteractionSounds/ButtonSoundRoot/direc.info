@@ -1,0 +1,7 @@
+These are the tones that most motorola interaction sounds make
+
+For button bad on MOTOTRBO models, just layer 300 and 600 
+
+TONE 900: is used for most good button presses on all radios
+TONE 300: is used for most bad button presses, most notably on APX models
+TONE 600: is used in conjunction with 300 to make the bad button sound for MOTOTRBO models
