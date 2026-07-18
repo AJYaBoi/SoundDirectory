@@ -2,9 +2,9 @@
     "meta": {
         "generator": "Mewtindew Sound Directory",
         "version": "1.0.0",
-        "generated": "2026-07-18T01:42:02.069546Z",
+        "generated": "2026-07-18T01:42:28.797559Z",
         "totalFolders": 6,
-        "totalAudio": 2
+        "totalAudio": 8
     },
     "search": [
         {
@@ -34,6 +34,54 @@
             "name": "BRANCH1TESTING",
             "path": "sounds/BRANCH1TESTING",
             "keywords": "branch1testing branch 1 testing"
+        },
+        {
+            "type": "audio",
+            "name": "Dtr600 All Notification Tones",
+            "filename": "DTR600 all notification tones.mp3",
+            "folder": "sounds/Motorola/RadioInteractionSounds/DTR600and700",
+            "path": "sounds/Motorola/RadioInteractionSounds/DTR600and700/DTR600 all notification tones.mp3",
+            "keywords": "dtr600 all notification tones sounds motorola radiointeractionsounds dtr600and700"
+        },
+        {
+            "type": "audio",
+            "name": "Dtr600 Call Fail",
+            "filename": "DTR600 Call fail.mp3",
+            "folder": "sounds/Motorola/RadioInteractionSounds/DTR600and700",
+            "path": "sounds/Motorola/RadioInteractionSounds/DTR600and700/DTR600 Call fail.mp3",
+            "keywords": "dtr600 call fail sounds motorola radiointeractionsounds dtr600and700"
+        },
+        {
+            "type": "audio",
+            "name": "Dtr600 Group Call",
+            "filename": "DTR600 Group Call.mp3",
+            "folder": "sounds/Motorola/RadioInteractionSounds/DTR600and700",
+            "path": "sounds/Motorola/RadioInteractionSounds/DTR600and700/DTR600 Group Call.mp3",
+            "keywords": "dtr600 group call sounds motorola radiointeractionsounds dtr600and700"
+        },
+        {
+            "type": "audio",
+            "name": "Dtr600 Priv Call Receive",
+            "filename": "DTR600 Priv Call Receive.mp3",
+            "folder": "sounds/Motorola/RadioInteractionSounds/DTR600and700",
+            "path": "sounds/Motorola/RadioInteractionSounds/DTR600and700/DTR600 Priv Call Receive.mp3",
+            "keywords": "dtr600 priv call receive sounds motorola radiointeractionsounds dtr600and700"
+        },
+        {
+            "type": "audio",
+            "name": "Dtr600 Privcall",
+            "filename": "DTR600 PrivCall.mp3",
+            "folder": "sounds/Motorola/RadioInteractionSounds/DTR600and700",
+            "path": "sounds/Motorola/RadioInteractionSounds/DTR600and700/DTR600 PrivCall.mp3",
+            "keywords": "dtr600 privcall sounds motorola radiointeractionsounds dtr600and700"
+        },
+        {
+            "type": "audio",
+            "name": "Dtr600 Select And Back",
+            "filename": "DTR600 select and back.mp3",
+            "folder": "sounds/Motorola/RadioInteractionSounds/DTR600and700",
+            "path": "sounds/Motorola/RadioInteractionSounds/DTR600and700/DTR600 select and back.mp3",
+            "keywords": "dtr600 select and back sounds motorola radiointeractionsounds dtr600and700"
         },
         {
             "type": "folder",
@@ -183,28 +231,89 @@
                                 "icon": null,
                                 "banner": null,
                                 "settings": {},
-                                "children": [],
+                                "children": [
+                                    {
+                                        "type": "audio",
+                                        "name": "DTR600 all notification tones.mp3",
+                                        "displayName": "Dtr600 All Notification Tones",
+                                        "extension": "mp3",
+                                        "path": "sounds/Motorola/RadioInteractionSounds/DTR600and700/DTR600 all notification tones.mp3",
+                                        "folder": "sounds/Motorola/RadioInteractionSounds/DTR600and700",
+                                        "size": 253964,
+                                        "sizeText": "248.0 KB"
+                                    },
+                                    {
+                                        "type": "audio",
+                                        "name": "DTR600 Call fail.mp3",
+                                        "displayName": "Dtr600 Call Fail",
+                                        "extension": "mp3",
+                                        "path": "sounds/Motorola/RadioInteractionSounds/DTR600and700/DTR600 Call fail.mp3",
+                                        "folder": "sounds/Motorola/RadioInteractionSounds/DTR600and700",
+                                        "size": 10535,
+                                        "sizeText": "10.3 KB"
+                                    },
+                                    {
+                                        "type": "audio",
+                                        "name": "DTR600 Group Call.mp3",
+                                        "displayName": "Dtr600 Group Call",
+                                        "extension": "mp3",
+                                        "path": "sounds/Motorola/RadioInteractionSounds/DTR600and700/DTR600 Group Call.mp3",
+                                        "folder": "sounds/Motorola/RadioInteractionSounds/DTR600and700",
+                                        "size": 8295,
+                                        "sizeText": "8.1 KB"
+                                    },
+                                    {
+                                        "type": "audio",
+                                        "name": "DTR600 Priv Call Receive.mp3",
+                                        "displayName": "Dtr600 Priv Call Receive",
+                                        "extension": "mp3",
+                                        "path": "sounds/Motorola/RadioInteractionSounds/DTR600and700/DTR600 Priv Call Receive.mp3",
+                                        "folder": "sounds/Motorola/RadioInteractionSounds/DTR600and700",
+                                        "size": 6208,
+                                        "sizeText": "6.1 KB"
+                                    },
+                                    {
+                                        "type": "audio",
+                                        "name": "DTR600 PrivCall.mp3",
+                                        "displayName": "Dtr600 Privcall",
+                                        "extension": "mp3",
+                                        "path": "sounds/Motorola/RadioInteractionSounds/DTR600and700/DTR600 PrivCall.mp3",
+                                        "folder": "sounds/Motorola/RadioInteractionSounds/DTR600and700",
+                                        "size": 9704,
+                                        "sizeText": "9.5 KB"
+                                    },
+                                    {
+                                        "type": "audio",
+                                        "name": "DTR600 select and back.mp3",
+                                        "displayName": "Dtr600 Select And Back",
+                                        "extension": "mp3",
+                                        "path": "sounds/Motorola/RadioInteractionSounds/DTR600and700/DTR600 select and back.mp3",
+                                        "folder": "sounds/Motorola/RadioInteractionSounds/DTR600and700",
+                                        "size": 26028,
+                                        "sizeText": "25.4 KB"
+                                    }
+                                ],
                                 "stats": {
                                     "folders": 0,
-                                    "files": 0
+                                    "files": 6
                                 }
                             }
                         ],
                         "stats": {
                             "folders": 1,
-                            "files": 0
+                            "files": 6
                         }
                     }
                 ],
                 "stats": {
                     "folders": 2,
-                    "files": 0
+                    "files": 6
                 }
             }
         ],
         "stats": {
             "folders": 5,
-            "files": 2
+            "files": 8
         }
     }
 }
