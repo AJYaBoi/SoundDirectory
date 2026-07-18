@@ -2,7 +2,7 @@
     "meta": {
         "generator": "Mewtindew Sound Directory",
         "version": "1.0.0",
-        "generated": "2026-07-18T22:26:51.020022Z",
+        "generated": "2026-07-18T22:27:27.122414Z",
         "totalFolders": 24,
         "totalAudio": 73
     },
@@ -721,7 +721,7 @@
             "type": "folder",
             "name": "FirstResponder",
             "path": "sounds/Vehicle/FirstResponder",
-            "keywords": "firstresponder "
+            "keywords": "firstresponder sounds that first responder vehicles make"
         },
         {
             "type": "folder",
@@ -998,7 +998,7 @@
                             "Vehicle",
                             "FirstResponder"
                         ],
-                        "info": "",
+                        "info": "Sounds that first responder vehicles make",
                         "icon": null,
                         "banner": null,
                         "settings": {},
