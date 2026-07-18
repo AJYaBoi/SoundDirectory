@@ -2,9 +2,9 @@
     "meta": {
         "generator": "Mewtindew Sound Directory",
         "version": "1.0.0",
-        "generated": "2026-07-18T01:51:04.982823Z",
+        "generated": "2026-07-18T01:51:20.396096Z",
         "totalFolders": 8,
-        "totalAudio": 8
+        "totalAudio": 11
     },
     "search": [
         {
@@ -34,6 +34,30 @@
             "name": "BRANCH1TESTING",
             "path": "sounds/BRANCH1TESTING",
             "keywords": "branch1testing branch 1 testing"
+        },
+        {
+            "type": "audio",
+            "name": "300",
+            "filename": "300.wav",
+            "folder": "sounds/Motorola/RadioInteractionSounds/ButtonSoundRoot/Frequencies",
+            "path": "sounds/Motorola/RadioInteractionSounds/ButtonSoundRoot/Frequencies/300.wav",
+            "keywords": "300 sounds motorola radiointeractionsounds buttonsoundroot frequencies"
+        },
+        {
+            "type": "audio",
+            "name": "600",
+            "filename": "600.wav",
+            "folder": "sounds/Motorola/RadioInteractionSounds/ButtonSoundRoot/Frequencies",
+            "path": "sounds/Motorola/RadioInteractionSounds/ButtonSoundRoot/Frequencies/600.wav",
+            "keywords": "600 sounds motorola radiointeractionsounds buttonsoundroot frequencies"
+        },
+        {
+            "type": "audio",
+            "name": "900",
+            "filename": "900.wav",
+            "folder": "sounds/Motorola/RadioInteractionSounds/ButtonSoundRoot/Frequencies",
+            "path": "sounds/Motorola/RadioInteractionSounds/ButtonSoundRoot/Frequencies/900.wav",
+            "keywords": "900 sounds motorola radiointeractionsounds buttonsoundroot frequencies"
         },
         {
             "type": "folder",
@@ -261,16 +285,47 @@
                                         "icon": null,
                                         "banner": null,
                                         "settings": {},
-                                        "children": [],
+                                        "children": [
+                                            {
+                                                "type": "audio",
+                                                "name": "300.wav",
+                                                "displayName": "300",
+                                                "extension": "wav",
+                                                "path": "sounds/Motorola/RadioInteractionSounds/ButtonSoundRoot/Frequencies/300.wav",
+                                                "folder": "sounds/Motorola/RadioInteractionSounds/ButtonSoundRoot/Frequencies",
+                                                "size": 1764042,
+                                                "sizeText": "1.7 MB"
+                                            },
+                                            {
+                                                "type": "audio",
+                                                "name": "600.wav",
+                                                "displayName": "600",
+                                                "extension": "wav",
+                                                "path": "sounds/Motorola/RadioInteractionSounds/ButtonSoundRoot/Frequencies/600.wav",
+                                                "folder": "sounds/Motorola/RadioInteractionSounds/ButtonSoundRoot/Frequencies",
+                                                "size": 1764042,
+                                                "sizeText": "1.7 MB"
+                                            },
+                                            {
+                                                "type": "audio",
+                                                "name": "900.wav",
+                                                "displayName": "900",
+                                                "extension": "wav",
+                                                "path": "sounds/Motorola/RadioInteractionSounds/ButtonSoundRoot/Frequencies/900.wav",
+                                                "folder": "sounds/Motorola/RadioInteractionSounds/ButtonSoundRoot/Frequencies",
+                                                "size": 1764042,
+                                                "sizeText": "1.7 MB"
+                                            }
+                                        ],
                                         "stats": {
                                             "folders": 0,
-                                            "files": 0
+                                            "files": 3
                                         }
                                     }
                                 ],
                                 "stats": {
                                     "folders": 1,
-                                    "files": 0
+                                    "files": 3
                                 }
                             },
                             {
@@ -359,19 +414,19 @@
                         ],
                         "stats": {
                             "folders": 3,
-                            "files": 6
+                            "files": 9
                         }
                     }
                 ],
                 "stats": {
                     "folders": 4,
-                    "files": 6
+                    "files": 9
                 }
             }
         ],
         "stats": {
             "folders": 7,
-            "files": 8
+            "files": 11
         }
     }
 }
